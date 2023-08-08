@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quarry </title>
+    <style>
+        .box {
+            border: 2px solid black;
+            color: white;
+            background-color: black;
+            text-align: center;
+            font-size: 55px;
+        }
+
+        @media 
+            (max-width: 700px){
+
+                
+                #box1 {
+                    display: block;
+                    color: cyan;
+                    border: 2px solid rgb(46, 22, 22);
+                }
+                }
+            
+        
+
+        @media (min-width:700px)and  (max-width: 1000px)
+
+            {
+            #box2 {
+                display: block;
+                color: tomato;
+                border: 2px solid rgb(73, 82, 60);
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 1200px)
+
+            {
+            #box3 {
+                display: block;
+                color: rgb(42, 165, 79);
+                border: 2px solid rgb(206, 183, 56);
+            }
+        }
+
+        @media (min-width: 1200px ) {
+            #box4 {
+                display: block;
+                color: rgb(165, 49, 49);
+                border: 2px solid greenyellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">ma iphone hoon </div>
+    <div class="box" id="box2">ma tablet hoon</div>
+    <div class="box" id="box3">ma laptop hoon</div>
+    <div class="box" id="box4">ma computer hon </div>
+</body>
+
+</html>

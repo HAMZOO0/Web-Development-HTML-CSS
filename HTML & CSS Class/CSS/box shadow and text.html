@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        .cont {
+            display: flex;
+        }
+
+
+        .cd {
+            padding: 27px;
+            margin: 29px;
+            /* border: 2px solid red; */
+            background-color: #2bb0e6ad;
+            /* box-shadow: 15px 4px 10px 24px rgba(21, 147, 231, 0.5); */
+            /* 10 boly to x ma shadow and 23 y ma and 10px is blur radius  and 24px is spired colour 
+        box-shadow: -21px -10px #1e609491;
+  */
+            /* box-shadow: 15px 4px 10px 24px rgba(33, 33, 303, 0.1) */
+            box-shadow: inset -1px 12px 51px 27px #0b4046;
+        }
+
+        .cd h2 {
+            text-shadow: 1px 1px 2px white;
+            /* use when box and text colour same  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="cd" id="car1">
+            <h2>This is C++ Course </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia vitae enim ducimus sit error inventore
+                dignissimos nulla reiciendis cupiditate eveniet sed similique sint aspernatur velit, praesentium,
+                impedit qui ea? Corrupti?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae minima
+                adipisci iusto eligendi sequi maiores accusamus dolore ipsa repellendus, blanditiis porro ex veritatis a
+                deleniti obcaecati aliquam quibusdam? Obcaecati, cumque.</p>
+        </div>
+        <div class="cd" id="car2">
+            <h2>This is CSS course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia vitae enim ducimus sit error inventore
+                dignissimos nulla reiciendis cupiditate eveniet sed similique sint aspernatur velit, praesentium,
+                impedit qui ea? Corrupti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque odit illo
+                enim rem earum obcaecati quaerat, in nam delectus ratione molestiae soluta rerum, excepturi fugiat? Illo
+                voluptas inventore officia.</p>
+        </div>
+        <div class="cd" id="car3">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consequuntur laudantium sit corporis
+                doloribus atque iure et totam labore sapiente? Ipsum esse iste quibusdam amet dignissimos id explicabo
+                ea cum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime neque exercitationem
+                error rem quis voluptate quod alias dolor consequatur laborum, repellendus, architecto quibusdam
+                corporis reiciendis ullam. Corrupti, voluptas reprehenderit.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

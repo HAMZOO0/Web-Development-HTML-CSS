@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries </title>
+    <style>
+        .box {
+            background-color: crimson;
+            color: whitesmoke;
+            font-size: 72px;
+            text-align: center;
+
+        }
+
+        @media (max-width: 500px) {
+            #box-1 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+        @media (max-width: 600px) and (min-width: 500px) {
+            #box2 {
+                display: block;
+                background-color: peru;
+
+            }
+        }
+        @media /*only screen and*/ (max-width: 700px) and (min-width: 600px) {
+            #box3 {
+                display: block;
+                background-color: pink;
+
+            }
+        }
+        @media (max-width: 700px) and (min-width: 600px) {
+            #box4 {
+                display: block;
+                background-color: blue;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">ma 1 mobile hoon</div>
+    <div class="box" id="box2">ma 1 laptop hoon</div>
+    <div class="box" id="box3">ma 1 iphone hoon </div>
+    <div class="box" id="box4">ma 1 i mac book pro hoon </div>
+
+</body>
+
+</html>

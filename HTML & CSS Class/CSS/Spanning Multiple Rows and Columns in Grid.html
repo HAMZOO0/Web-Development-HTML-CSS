@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Creating Rows & Gaps in Grid </title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 2fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-row-gap: 1rem;
+            grid-column-gap: 2rem;
+        }
+
+        .box {
+            border: 2px solid blue;
+            background-color: violet;
+        }
+
+        .box:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 7;
+            grid-row-end: 7
+            ; */
+            grid-column: 2/span 3;
+            grid-row: 1/span 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">this is box 1</div>
+        <div class="box">this is box2</div>
+        <div class="box">this is box3</div>
+        <div class="box">this is box4</div>
+        <div class="box">this is box5</div>
+        <div class="box">this is box6</div>
+        <div class="box">this is box7</div>
+        <div class="box">this is box8</div>
+        <div class="box">this is box9</div>
+        <div class="box">this is box</div>
+        <div class="box">this is box</div>
+        <div class="box">this is box</div>
+        <div class="box">this is box</div>
+        <div class="box">this is box</div>
+        <div class="box">this is box</div>
+        <div class="box">this is box</div>
+        <div class="box">this is box</div>
+    </div>
+</body>
+
+</html>
